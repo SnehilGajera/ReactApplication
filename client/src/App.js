@@ -4,7 +4,7 @@ import ProductList from './components/ProductList.js';
 import Footer from './components/Footer.js';
 
 function App() {
-  const products = [{
+  const productList = [{
     price : 99999,
     name :"IPhone 10s",
     quantity : 0
@@ -18,8 +18,10 @@ function App() {
   return (
     <>
       <Navbar/>
-      <ProductList products={products}/>
-      <Footer/>
+      <main className='container mt-5'>
+      <ProductList productList={productList}/>
+      </main>
+      {/* <Footer/> */}
     </>
   );
 }
